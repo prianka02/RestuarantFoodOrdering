@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="601.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.burgerController">
+   <children>
+      <TableView fx:id="burgerTable" prefHeight="400.0" prefWidth="361.0" style="-fx-background-color: #E8E1F7;">
+         <columns>
+            <TableColumn fx:id="foodNameColum" prefWidth="241.60003662109375" text="Burger Food Item Name" />
+            <TableColumn fx:id="priceColum" prefWidth="119.199951171875" text="Price" />
+         </columns>
+      </TableView>
+      <VBox prefHeight="400.0" prefWidth="224.0" spacing="10.0">
+         <children>
+            <Label alignment="CENTER" prefHeight="40.0" prefWidth="230.0" text="Enter Burger Food Items" textFill="#0c1d89">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <TextField fx:id="foodName" prefHeight="41.0" prefWidth="183.0" promptText="Enter Burger food name">
+               <font>
+                  <Font size="15.0" />
+               </font></TextField>
+            <TextField fx:id="price" prefHeight="39.0" prefWidth="190.0" promptText="Enter Price">
+               <font>
+                  <Font size="15.0" />
+               </font></TextField>
+            <Button mnemonicParsing="false" onAction="#addFood" prefHeight="40.0" prefWidth="225.0" style="-fx-background-color: #E8E1F7;" text="Add" textFill="#0c1d89">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Button>
+            <Label alignment="CENTER" layoutX="30.0" layoutY="10.0" prefHeight="40.0" prefWidth="230.0" text="Select a item from table !" textFill="#0c1d89">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Button layoutX="30.0" layoutY="162.0" mnemonicParsing="false" onAction="#deleteFood" prefHeight="40.0" prefWidth="225.0" style="-fx-background-color: #E8E1F7;" text="Delete" textFill="#0c1d89">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Button>
+         </children>
+         <padding>
+            <Insets left="20.0" right="20.0" />
+         </padding>
+      </VBox>
+   </children>
+</HBox>

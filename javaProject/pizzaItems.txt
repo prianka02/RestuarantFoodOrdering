@@ -1,0 +1,5 @@
+Seafood Pizza#70
+Pepperoni Pizza#55
+Chicken Ranch#60
+Cheese Lovers Pizza#50
+Meat Lovers Pizza#60

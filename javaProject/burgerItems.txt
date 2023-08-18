@@ -1,0 +1,5 @@
+Cheese Burger#50
+Classic Chicken Burger#60
+Fried Shrimp Sandwich#60
+Crispy Chicken Sandwich#55
+Roast Beef  Club#40

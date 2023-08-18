@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane fx:id="pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="556.0" prefWidth="649.0" style="-fx-background-color: #E8E1F7;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <Label layoutX="42.0" layoutY="27.0" prefHeight="53.0" prefWidth="565.0" text="Restaurant Management System" textFill="#1e6ad6">
+         <font>
+            <Font name="System Bold Italic" size="36.0" />
+         </font>
+      </Label>
+      <Label layoutX="142.0" layoutY="196.0" prefHeight="43.0" prefWidth="99.0" text=" Login As :  " textFill="#1e6ad6">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="custButton" layoutX="254.0" layoutY="196.0" mnemonicParsing="false" onAction="#customerAction" prefHeight="43.0" prefWidth="115.0" text="Customer" textFill="#0a4aa4">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Button>
+      <Label layoutX="277.0" layoutY="249.0" prefHeight="43.0" prefWidth="63.0" text="    OR" textFill="#1e6ad6">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="managerButton" layoutX="254.0" layoutY="303.0" mnemonicParsing="false" onAction="#managerAction" prefHeight="43.0" prefWidth="115.0" text="Manager" textFill="#0a4aa4">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="exitHomePage" layoutX="520.0" layoutY="481.0" mnemonicParsing="false" onAction="#exitHomeAction" prefHeight="43.0" prefWidth="115.0" text="Exit?" textFill="#c10d2e">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Button>
+      <TextField fx:id="username" disable="true" layoutX="429.0" layoutY="303.0" promptText="username" />
+      <TextField fx:id="password" disable="true" layoutX="429.0" layoutY="346.0" promptText="Pass Word" />
+      <Button fx:id="loginMn" disable="true" layoutX="461.0" layoutY="391.0" mnemonicParsing="false" onAction="#managerLoginAction" prefHeight="33.0" prefWidth="85.0" text="Login" textFill="#0a4aa4">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Button>
+      <PasswordField fx:id="hidePass" disable="true" layoutX="429.0" layoutY="346.0" promptText="Pass Word" />
+      <CheckBox fx:id="check" disable="true" layoutX="552.0" layoutY="350.0" mnemonicParsing="false" onAction="#checkVisibility" prefHeight="17.0" prefWidth="19.0" />
+   </children>
+</Pane>
